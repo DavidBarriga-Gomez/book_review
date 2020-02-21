@@ -4,6 +4,12 @@ RSpec.describe 'api search', type: :feature do
   it 'does the thing' do
     visit('/')
 
+    # fill_in 'Enter Book Title', with: 'the man who saw everything'
+    fill_in :title, with: 'the man who saw everything'
+    click_on('Find Book')
+    # save_and_open_page
+    expect(current_path).to eq(search_path)
+
 
   end
 
