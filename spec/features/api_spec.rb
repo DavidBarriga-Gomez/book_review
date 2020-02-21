@@ -12,7 +12,8 @@ RSpec.describe 'api search', type: :feature do
 
     expect(page).to have_content('The Man Who Saw Everything')
 
-
+    expect(page).to have_content('The Man Who Saw Everything,” which was longlisted for the Booker Prize, looks at masculinity through the perspective of a young historian who sneers at “authoritarian old men.')
+    expect(page).to have_content('Deborah Levy’s latest novel, “The Man Who Saw Everything,” experiments with time travel, history and the endless complications of love.')
   end
 
 end

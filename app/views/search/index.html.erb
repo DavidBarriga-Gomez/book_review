@@ -2,4 +2,9 @@
 <h3>Author: <%= @book[:author_name].first %></h3>
 <h3>Genre: <%= @book[:type] %></h3>
 
-<p>Reviews</p>
+<br>
+
+<h3>Reviews</h3>
+<% @reviews.each do |review| %>
+  <p>-<%= review[:summary] %></p>
+<% end %>
