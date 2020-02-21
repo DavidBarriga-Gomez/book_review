@@ -1,5 +1,8 @@
 class SearchController < ApplicationController
   def index
+    # render locals: {
+    #               search_results_1:
+    #                 }
     connection = Faraday.new(url: 'http://openlibrary.org') do |faraday|
       faraday.headers
     end
