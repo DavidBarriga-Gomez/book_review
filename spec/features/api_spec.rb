@@ -10,6 +10,8 @@ RSpec.describe 'api search', type: :feature do
     # save_and_open_page
     expect(current_path).to eq(search_path)
 
+    expect(page).to have_content('The Man Who Saw Everything')
+
 
   end
 
