@@ -17,6 +17,7 @@ gem 'jquery-rails'
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
+  gem 'launchy'
 end
 
 group :development do
